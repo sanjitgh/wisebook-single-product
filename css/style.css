@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FC1111;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: "Playfair Display", serif;
+    overflow-x: hidden;
+}
+
+/* header style start */
+header {
+    padding: 20px 0px;
+    display: flex;
+    position: sticky;
+    background-color: #ffffff45;
+    backdrop-filter: blur(2px);
+}
+
+header .container .row {
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.logo {
+    z-index: 9999;
+}
+
+.navbar_nav li {
+    background: #CB2929;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .2s all ease-out;
+}
+
+.navbar_nav li:last-child {
+    margin-right: 0px;
+}
+
+.navbar_nav li:hover {
+    background: #e93f3f;
+}
+
+.navbar_nav {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_control {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar_nav li a i {
+    color: #fff;
+    font-size: 21px;
+}
+
+.navbar_nav li a {
+    display: flex;
+    text-decoration: none;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.mobile_menu .nav-link {
+    background: red;
+    border-bottom: 1px solid white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.mobile_menu .nav-link:last-child {
+    border-bottom: none;
+}
+
+.mobile_menu .navbar-collapse {
+    position: absolute;
+    top: 51px;
+    right: 10px;
+}
+
+/* nav toggle */
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.toggle span {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: #e93f3f;
+    border-radius: 10px;
+    transition: 0.5s;
+    left: 15px;
+}
+
+.toggle span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 20px;
+    left: 15px;
+}
+
+.toggle.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.toggle span:nth-child(2) {
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;
+}
+
+.toggle.active span:nth-child(2) {
+    width: 40px;
+    transform: translateY(0) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(60px);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* nav toggle */
+
+/* header style end */
+
+
+
+
+
+
+
+
+
+
+
+/* single product start */
+.single_product{
+    padding: 50px 0;
+}
+.product-page {
+    display: flex;
+    gap: 20px;
+}
+
+
+.product-main-image {
+    width: 100%;
+    max-height: 650px;
+    display: block;
+}
+
+.thumbnail-section {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.product-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #262D3C;
+    font-family: "Poppins", sans-serif ;
+}
+.couple_text{
+    text-decoration: none;
+    color: #ADB4BF;
+    font-family: "Poppins", sans-serif !important;
+}
+.product-price {
+    font-size: 40px;
+    font-weight: 600;
+    color: #262D3C;
+    margin: 0px 0px 55px 0px;
+    font-family: "Poppins", sans-serif !important;
+}
+.product_feature_list{
+    padding: 0;
+    margin: 30px 0;
+}
+.product_feature_list li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif !important;
+}
+.product-description {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.product-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.product-form select
+ {padding: 10px;
+    border-radius: 8px;
+    border-color: #ddd;
+    outline: none;
+}
+
+.pre_order_button{
+    border-radius: 100px;
+    background-color: #262D3C;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    transition: .2s ease-in;
+    font-family: "Poppins", sans-serif !important;
+}
+.pre_order_button:hover{
+    background-color:#CB2929;
+}

@@ -1,0 +1,33 @@
+
+@media (max-width: 767px) {
+    .navbar_nav{
+        display: none;
+    }
+    .mobile_menu{
+        display: block;
+        padding: 0;
+        position: absolute;
+        top: -24px;
+        right: 12px;
+    }
+    .product-title {
+        font-size: 40px;
+
+    }
+    .product-price {
+        font-size: 30px;
+        margin: 0px 0px 35px 0px;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        padding: 15px 0px;
+    }
+    .pre_order_button{
+
+        padding: 12px 20px;
+
+    }
+}
+
