@@ -177,9 +177,12 @@ header .container .row {
 
 
 
+/*********************** copy paste from here *****************************/
 
-
-
+/* should need padding 0 !importent */
+body {
+    padding: 0 !important;
+}
 
 /* single product start */
 .single_product{
